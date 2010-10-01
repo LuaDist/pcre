@@ -1,0 +1,10 @@
+--- This file is part of LuaDist project
+
+name = "pcre"
+version = "7.6"
+
+desc = "Perl-compatible regular expression library"
+author = "Philip Hazel"
+license = "BSD"
+url = "http://www.pcre.org"
+maintainer = "Peter Kapec"
