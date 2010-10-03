@@ -6,7 +6,7 @@
 #	was modified to suit LuaDist (search for "#LuaDist: ..." comments )
 
 # LuaDist:
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 INCLUDE(dist.cmake)
 
 ###########################################################################################
