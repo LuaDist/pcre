@@ -6,6 +6,7 @@
 #	was modified to suit LuaDist (search for "#LuaDist: ..." comments )
 
 # LuaDist:
+PROJECT(pcre C CXX)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 INCLUDE(dist.cmake)
 
@@ -38,10 +39,6 @@ INCLUDE(dist.cmake)
 #            libpcre-0.dll, libpcreposix-0.dll and libpcrecpp-0.dll - same names
 #            built by default with Configure and Make.
 # 2008-01-23 PH removed the automatic build of pcredemo.
-
-PROJECT(PCRE C CXX)
-
-CMAKE_MINIMUM_REQUIRED(VERSION 2.4.6)
 
 SET(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake) # for FindReadline.cmake
 
