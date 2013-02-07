@@ -285,9 +285,6 @@ endif ( MSVC )
 set ( CMAKE_INCLUDE_CURRENT_DIR 1 )
 # needed to make sure to not link debug libs
 # against release libs and vice versa
-if ( WIN32 )
-  set ( CMAKE_DEBUG_POSTFIX "d" )
-endif ( WIN32 )
 
 #LuaDist: Create SHARED libraries
 # pcre
@@ -389,7 +386,7 @@ endif ( WIN32 )
 
 get_target_property ( PCRECPP_UNITTEST_EXE pcrecpp_unittest DEBUG_LOCATION )
 
-get_target_property ( PCRE_SCANNER_UNITTEST_EXE pcre_scanner_unittest DEBUG_LOCATION )
+get_target_property ( PCRE_SCANNER_UNITTEST_EXE pcre_scanner_unittest ADD_CUSTOM_COMMAND_LOCATION )
 
 get_target_property ( PCRE_STRINGPIECE_UNITTEST_EXE pcre_stringpiece_unittest DEBUG_LOCATION )
 
